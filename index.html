@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="book-list">
+    <h2>Book List</h2>
+    <ul id="book-list">
+        <li> Title:The Grass is Always Greener
+            Author:	Jeffrey Archer
+        ISBN:1-86092-049-7 </li>
+        <li>Title:	Murder!
+            Author:	Arnold Bennett (1867-1931)
+            ISBN:	1-86092-012-8</li>
+        <li>	
+            Title:	Death on the Air
+            Author:	Ngaio Marsh (1899-1982)
+            ISBN:	1-86092-020-9</li>
+        <li>Title:	The Body Snatcher
+            Author:	Robert Louis Stevenson (1850-1894)
+            ISBN:	1-86092-001-2</li>
+        <!-- The book list will be populated using JavaScript -->
+    </ul>
+    </div>
+    <div class="add-book">
+    <h2>Add New Book</h2>
+        <form id="add-book-form">
+        <input type="text" id="title" placeholder="Title" required><br><br>
+        <input type="text" id="author" placeholder="Author" required><br><br>
+        <input type="number" id="isbn" placeholder="ISBN" required><br><br>
+        <button type="submit">Add Book</button>
+        </form>
+    </div>
+    <div class="search-book">
+    <h2>Search for Books</h2>
+    <input type="text" id="search-input" placeholder="Search by Title or Author">
+    <ul id="search-results">
+    <button id="search-book">Search Book</button>
+    <!-- The search results will be populated using JavaScript -->
+    </ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
